@@ -16,6 +16,8 @@ A responsive and user-friendly restaurant website designed to provide informatio
 - HTML
 - CSS
 - JavaScript
+- PHP
+- Mysql
 
 ## Project Purpose
 

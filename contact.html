@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | City Bistro</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info, .contact-form {
+      margin-bottom: 30px;
+    }
+
+    .contact-info h2 {
+      color: #222;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .contact-info p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .info-item {
+      margin-bottom: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background-color: #f4b400;
+      color: #222;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background-color 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #e6a700;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">City Bistro</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-info">
+      <h2>Restaurant Owner Info</h2>
+      <div class="info-item"><strong>Owner Name:</strong> Rahul Bastian</div>
+      <div class="info-item"><strong>Phone:</strong> +91 98765 43210</div>
+      <div class="info-item"><strong>Email:</strong> bastian@citybistro.com</div>
+      <div class="info-item"><strong>Address:</strong> 45 Foodie Lane, MG Road, Delhi, India</div>
+      <div class="info-item"><strong>Opening Hours:</strong> Mon–Sun: 10:00 AM – 11:00 PM</div>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="contact_process.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

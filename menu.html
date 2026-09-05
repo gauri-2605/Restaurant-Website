@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>City Bistro | Menu</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8f0;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color: #f8b400;
+      padding: 15px 20px;
+    }
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 24px;
+      color: white;
+      float: left;
+    }
+    .nav-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    .nav-links li {
+      float: right;
+      margin-left: 25px;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .nav-links a.active {
+      text-decoration: underline;
+    }
+
+    .menu-container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .menu-item:hover {
+      transform: scale(1.02);
+    }
+
+    .menu-item img {
+      width: 140px;
+      height: 100px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .menu-info {
+      padding: 15px 20px;
+      flex-grow: 1;
+    }
+    .menu-info h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      color: #333;
+    }
+    .menu-info p.price {
+      font-weight: bold;
+      color: #f8b400;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      .nav-links li {
+        float: none;
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+      .nav-links {
+        text-align: center;
+      }
+      .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .menu-item img {
+        width: 100%;
+        height: auto;
+      }
+      .menu-info {
+        padding: 10px 0 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">City Bistro</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Menu Items List -->
+  <div class="menu-container">
+    <div class="menu-item">
+    
+    </div>
+
+    <div class="menu-item">
+      <img src="paneer.jpg" alt="Paneer Tikka" />
+      <div class="menu-info">
+        <h3>Paneer Tikka</h3>
+        <p class="price">$12.50</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="masala.jpg" alt="Masala Dosa" />
+      <div class="menu-info">
+        <h3>Masala Dosa</h3>
+        <p class="price">$9.99</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="chole.jpg" alt="Chole Bhature" />
+      <div class="menu-info">
+        <h3>Chole Bhature</h3>
+        <p class="price">$10.50</p>
+      </div>
+    </div>
+
+   
+ 
+
+    <div class="menu-item">
+      <img src="veg.jpg" alt="Vegetable Biryani" />
+      <div class="menu-info">
+        <h3>Vegetable Biryani</h3>
+        <p class="price">$13.00</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="Chicken.jpg" alt="Tandoori Chicken" />
+      <div class="menu-info">
+        <h3>Tandoori Chicken</h3>
+        <p class="price">$15.00</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="Rasgulla.jpg" alt="Rasgulla" />
+      <div class="menu-info">
+        <h3>Rasgulla</h3>
+        <p class="price">$6.00</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="Palak paneer.jpg" alt="Palak Paneer" />
+      <div class="menu-info">
+        <h3>Palak Paneer</h3>
+        <p class="price">$13.50</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="jalebi.jpg" alt="Jalebi" />
+      <div class="menu-info">
+        <h3>Jalebi</h3>
+        <p class="price">$5.00</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
